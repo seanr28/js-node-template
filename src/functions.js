@@ -7,3 +7,12 @@ function calculateTotal(order) {
   return order.price * order.quantity
 }
 console.log(calculateTotal(order))
+
+const person = {
+  fname: 'John',
+  lname: 'Doe',
+}
+function formatUsername(person) {
+  return `${person.lname}, ${person.fname}`
+}
+console.log(formatUsername(person))
