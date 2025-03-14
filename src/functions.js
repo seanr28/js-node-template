@@ -35,3 +35,12 @@ function calculateCartTotal(cart) {
   return cart.price * cart.tax + cart.price
 }
 console.log(calculateCartTotal(cart))
+
+const nameInfo = {
+  fname: 'John',
+  lname: 'Doe',
+}
+function buildFullName(nameInfo) {
+  return `${nameInfo.fname} ${nameInfo.lname}`
+}
+console.log(buildFullName(nameInfo))
