@@ -25,3 +25,13 @@ function combinestrings(phrase) {
   return `${phrase.begin} ${phrase.end}`
 }
 console.log(combinestrings(phrase))
+
+const cart = {
+  price: 100,
+  tax: 0.07,
+}
+
+function calculateCartTotal(cart) {
+  return cart.price * cart.tax + cart.price
+}
+console.log(calculateCartTotal(cart))
