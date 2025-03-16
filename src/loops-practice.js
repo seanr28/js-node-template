@@ -20,10 +20,10 @@ const games = [
   { title: 'Destiny 2' },
   { title: 'Call of Duty: Modern Warfare(2019)' },
 ]
-let number = 1
+let number = 1 // to keep track of the number of games in the list
 for (let i = 0; i < games.length; i++) {
   const game = games[i]
-  console.log(`${number}. ${game.title}`)
+  console.log(`${number}. ${game.title}`) // prints the game title with a number in front of it
   number++
 }
 
@@ -36,6 +36,8 @@ const players = [
 for (let i = 0; i < players.length; i++) {
   const player = players[i]
 
-  const killDeathRatio = (player.kills / Math.max(1, player.deaths)).toFixed(2)
-  console.log(`${player.name} has a K/D ratio of ${killDeathRatio}`)
+  const killDeathRatio = (player.kills / Math.max(1, player.deaths)).toFixed(2) // Calculate K/D ratio and ensure no division by zero
+  console.log(
+    `${player.name} has ${player.kills} kills and ${player.deaths} deaths. Overall has a K/D ratio of ${killDeathRatio}`,
+  ) // prints the player's name and K/D ratio
 }
