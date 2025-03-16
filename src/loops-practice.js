@@ -36,5 +36,5 @@ const players = [
 for (let i = 0; i < players.length; i++) {
   const player = players[i]
   const kdRatio = (player.kills / Math.max(1, player.deaths)).toFixed(2)
-  console.log(`${player.name}: ${player.kills} kills, has a K/D ratio of ${kdRatio}`)
 }
+console.log(`${player.name}: ${player.kills} kills, has a K/D ratio of ${kdRatio}`)
