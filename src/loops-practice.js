@@ -1,10 +1,10 @@
 for (let i = 1; i <= 10; i++) {
-  console.log(i)
+  console.log(i) /// Ex. of for loop
 }
 
 let i = 1
 while (i <= 10) {
-  console.log(i)
+  console.log(i) /// Ex. of while loop
   i++
 }
 
@@ -35,6 +35,7 @@ const players = [
 
 for (let i = 0; i < players.length; i++) {
   const player = players[i]
-  const kdRatio = (player.kills / Math.max(1, player.deaths)).toFixed(2)
+
+  const killDeathRatio = (player.kills / Math.max(1, player.deaths)).toFixed(2)
+  console.log(`${player.name} has a K/D ratio of ${killDeathRatio}`)
 }
-console.log(`${player.name}: ${player.kills} kills, has a K/D ratio of ${kdRatio}`)
